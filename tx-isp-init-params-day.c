@@ -1,6 +1,6 @@
 #include "tiziano_params.h"
 tisp_params_t tparams_day = {
-TISP_PARAM_DEF(tparams_day, TISP_PARAM_TOP_BYPASS) = {{1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1}},
+TISP_PARAM_DEF(tparams_day, TISP_PARAM_TOP_BYPASS) = {{1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1}},
 TISP_PARAM_DEF(tparams_day, TISP_PARAM_AE_PARAMETER) = {{1, 15, 1, 15, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 30, 230, 1, 1, 1024, 0, 42, 0}},
 TISP_PARAM_DEF(tparams_day, TISP_PARAM_AE_SWITCH_NIGHT_MODE) = {{2397, 44217, 1024, 4095, 2, 1024, 1024, 1024, 500, 1024, 1024, 1024, 1, 1024, 1024, 1024, 0, 0, 0, 0}},
 TISP_PARAM_DEF(tparams_day, TISP_PARAM_AE_POINTPOS) = {{10, 1024}},
@@ -940,7 +940,7 @@ TISP_PARAM_DEF(tparams_day, TISP_PARAM_ADR_MAPB3_LIST_WDR) = {{0, 0, 0, 230, 230
 TISP_PARAM_DEF(tparams_day, TISP_PARAM_ADR_MAPB4_LIST_WDR) = {{3, 3, 3, 373, 373, 373, 373, 373, 373}},
 TISP_PARAM_DEF(tparams_day, TISP_PARAM_ADR_BLP2_LIST_WDR) = {{260, 260, 260, 260, 260, 260, 260, 260, 260}},
 TISP_PARAM_DEF(tparams_day, TISP_PARAM_ADR_BLP2_LIST) = {{250, 250, 250, 250, 450, 450, 450, 260, 260}},
-TISP_PARAM_DEF(tparams_day, TISP_PARAM_HLDC_CON_PAR_ARRAY) = {{0, 0, 0, 1, 204, 409, 1777, 885, 0, 0, 0, 204, 409, 1777, 0, 885, 0, 0}},
+TISP_PARAM_DEF(tparams_day, TISP_PARAM_HLDC_CON_PAR_ARRAY) = {{0, 0, 0, 1, 512, 204, 2652, 885, 0, 0, 0, 512, 204, 2652, 0, 3540, 0, 0}},
 TISP_PARAM_DEF(tparams_day, TISP_PARAM_AF_ZONE) = {{3, 8, 1, 8, 240, 240, 240, 240, 240, 240, 240, 224, 240, 240, 240, 240, 240, 240, 240, 134, 134, 134, 134, 134, 134, 134, 131, 134, 134, 134, 134, 134, 134, 134, 1, 0}},
 TISP_PARAM_DEF(tparams_day, TISP_PARAM_AF_TH_EN) = {{1, 1, 1, 1, 200, 0, 0, 0, 0, 0, 0, 0, 0}},
 TISP_PARAM_DEF(tparams_day, TISP_PARAM_AF_FIR0_V) = {{2026, 128, 300, 128, 2026}},
