@@ -1,5 +1,5 @@
 #!/bin/sh
-SENSOR="sc3235-t31"
+SENSOR="gc2053-t31"
 
 if mountpoint -q ~/nfswork/mnt
 then
