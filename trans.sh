@@ -1,14 +1,41 @@
 #!/bin/sh
 SENSOR="sc3235-t31"
-
-if mountpoint -q ~/nfswork/mnt
-then
-    echo "mounted"
-else
-    echo "not mounted"
-    mount -o nolock -t nfs 193.169.4.2:/home_b/nfsroot/zjqi ~/nfswork/mnt
-fi
+TOOL="NFS"
+NFS_MY_PATH=/home/book/nfswork/mnt
+NFS_WORK_PATH=/home/zjqi/net/nfsroot
+TFTP_MY_PATH=/home/book/nfswork/mnt
+TFTP_WORK_PATH=/home/zjqi/net/tftproot
 
 make clean && make S=${SENSOR}
-cp ${SENSOR}.bin ~/nfswork/mnt/ -vf                                                                                                   
+
+if [ ${TOOL} = "NFS" ];then
+    if [ -d "${NFS_MY_PATH}" ];then
+        if mountpoint -q ${NFS_MY_PATH};then
+            echo "mounted"
+        else
+            echo "not mounted"
+            mount -o nolock -t nfs 193.169.4.2:/home_b/nfsroot/zjqi ${NFS_MY_PATH}/
+        fi
+    
+        cp ${SENSOR}.bin ${NFS_MY_PATH}/ -vf                                       
+
+    elif [ -d "${NFS_WORK_PATH}" ];then
+        if mountpoint -q ${NFS_WORK_PATH};then
+            echo "mounted"
+        else
+            echo "not mounted"
+            mount -o nolock -t nfs 193.169.4.2:/home_b/nfsroot/zjqi ${NFS_WORK_PATH}/
+        fi
+
+        cp ${SENSOR}.bin ${NFS_WORK_PATH}/ -vf                                                                                                   
+    fi
+
+elif [ ${TOOL} = "TFTP" ];then
+    if [ -d "${TFTP_MY_PATH}" ];then
+        cp ${SENSOR}.bin ${TFTP_MY_PATH}/ -vf 
+    elif [ -d "${TFTP_WORK_PATH}" ];then
+        cp ${SENSOR}.bin ${TFTP_WORK_PATH}/ -vf
+    fi
+fi
+
 md5sum ${SENSOR}.bin
