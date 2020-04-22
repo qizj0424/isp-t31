@@ -1,5 +1,5 @@
 #!/bin/sh
-SENSOR="sc3235-t31"
+SENSOR="jxf28-t31"
 TOOL="NFS"
 NFS_MY_PATH=/home/book/nfswork/mnt
 NFS_WORK_PATH=/home/zjqi/net/nfsroot
