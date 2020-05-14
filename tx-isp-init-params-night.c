@@ -1,6 +1,6 @@
 #include "tiziano_params.h"
 tisp_params_t tparams_night = {
-TISP_PARAM_DEF(tparams_night, TISP_PARAM_TOP_BYPASS) = {{1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1}},
+TISP_PARAM_DEF(tparams_night, TISP_PARAM_TOP_BYPASS) = {{1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1}},
 TISP_PARAM_DEF(tparams_night, TISP_PARAM_AE_PARAMETER) = {{1, 15, 1, 15, 76, 76, 76, 76, 76, 76, 76, 76, 76, 76, 76, 76, 76, 76, 76, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 30, 230, 1, 1, 1024, 0, 42, 315541}},
 TISP_PARAM_DEF(tparams_night, TISP_PARAM_AE_SWITCH_NIGHT_MODE) = {{1616, 16128, 1024, 4096, 2, 1024, 1024, 1024, 500, 1024, 1024, 1024, 1, 1024, 1024, 1024, 0, 0, 0, 0}},
 TISP_PARAM_DEF(tparams_night, TISP_PARAM_AE_POINTPOS) = {{10, 1024}},
@@ -872,7 +872,7 @@ TISP_PARAM_DEF(tparams_night, TISP_PARAM_DEFOG_TRSY1_LIST) = {{70, 80, 80, 90, 9
 TISP_PARAM_DEF(tparams_night, TISP_PARAM_DEFOG_TRSY2_LIST) = {{50, 70, 70, 80, 80, 80, 80, 80, 70}},
 TISP_PARAM_DEF(tparams_night, TISP_PARAM_DEFOG_TRSY3_LIST) = {{40, 60, 60, 65, 70, 75, 75, 75, 70}},
 TISP_PARAM_DEF(tparams_night, TISP_PARAM_DEFOG_TRSY4_LIST) = {{70, 80, 80, 85, 90, 95, 95, 95, 90}},
-TISP_PARAM_DEF(tparams_night, TISP_PARAM_DEFOG_RGBRA_LIST) = {{0, 512, 0, 100, 100, 512, 512, 512, 512}},
+TISP_PARAM_DEF(tparams_night, TISP_PARAM_DEFOG_RGBRA_LIST) = {{0, 100, 0, 100, 100, 512, 512, 512, 512}},
 TISP_PARAM_DEF(tparams_night, TISP_PARAM_DEFOG_MAIN_PARA_ARRAY) = {{70, 242, 1, 8, 16, 16, 16, 16, 16, 16, 16}},
 TISP_PARAM_DEF(tparams_night, TISP_PARAM_DEFOG_COLOR_CONTROL_ARRAY) = {{8, 24, 32, 40, 56, 60, 60, 60, 60, 60, 4, 3, 3, 4}},
 TISP_PARAM_DEF(tparams_night, TISP_PARAM_DEFOG_LC_S_ARRAY) = {{3, 3, 3, 3, 8, 16, 24, 10, 28, 32}},
