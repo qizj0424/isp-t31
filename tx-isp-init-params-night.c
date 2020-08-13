@@ -1,6 +1,6 @@
 #include "tiziano_params.h"
 tisp_params_t tparams_night = {
-TISP_PARAM_DEF(tparams_night, TISP_PARAM_TOP_BYPASS) = {{1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1}},
+TISP_PARAM_DEF(tparams_night, TISP_PARAM_TOP_BYPASS) = {{1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1}},
 TISP_PARAM_DEF(tparams_night, TISP_PARAM_AE_PARAMETER) = {{1, 15, 1, 15, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 30, 230, 1, 1, 0, 0, 42, 71411}},
 TISP_PARAM_DEF(tparams_night, TISP_PARAM_AE_SWITCH_NIGHT_MODE) = {{1346, 113163, 1024, 4096, 1, 1024, 1024, 1024, 500, 1024, 1024, 1024, 1, 1024, 1024, 1024, 0, 0, 0, 0}},
 TISP_PARAM_DEF(tparams_night, TISP_PARAM_AE_POINTPOS) = {{10, 1024}},
