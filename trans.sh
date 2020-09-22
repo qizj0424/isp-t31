@@ -4,7 +4,7 @@ SENSOR="jxf37-t31"
 #####NFS OR TFTP##Choose the upload method#
 TOOL="NFS"
 NFS_MY_PATH=/home/book/nfswork/mnt
-NFS_WORK_PATH=/home/zjqi/nfsroot
+NFS_WORK_PATH=/home/zjqi/nfsroot/mnt
 TFTP_MY_PATH=/home/book/nfswork/mnt
 TFTP_WORK_PATH=/home/zjqi/tftproot
 
@@ -16,7 +16,7 @@ if [ ${TOOL} = "NFS" ];then
             echo "mounted"
         else
             echo "not mounted"
-           // mount -o nolock -t nfs 193.169.4.2:/home_b/nfsroot/zjqi ${NFS_MY_PATH}/
+            mount -o nolock -t nfs 193.169.4.2:/home_b/nfsroot/zjqi ${NFS_MY_PATH}/
         fi
     
         cp ${SENSOR}.bin ${NFS_MY_PATH}/ -vf                                       
@@ -26,7 +26,7 @@ if [ ${TOOL} = "NFS" ];then
             echo "mounted"
         else
             echo "not mounted"
-            //mount -o nolock -t nfs 193.169.4.2:/home_b/nfsroot/zjqi ${NFS_WORK_PATH}/
+            mount -o nolock -t nfs 193.169.4.2:/home_b/nfsroot/zjqi ${NFS_WORK_PATH}/
         fi
 
         cp ${SENSOR}.bin ${NFS_WORK_PATH}/ -vf                                                                                                   
