@@ -1,6 +1,6 @@
 #!/bin/sh
 ####Select the sensor####
-SENSOR="sc3235-t31"
+SENSOR="gc1054-t31"
 #####NFS OR TFTP##Choose the upload method#
 TOOL="NFS"
 NFS_MY_PATH=/home/book/nfswork/mnt
