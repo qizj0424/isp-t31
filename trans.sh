@@ -2,7 +2,7 @@
 ####Select the sensor####
 SENSOR="jxf37-t31"
 #####NFS OR TFTP##Choose the upload method#
-TOOL="NFS"
+TOOL="TFTP"
 NFS_MY_PATH=/home/book/nfswork/mnt
 NFS_WORK_PATH=/home/zjqi/nfsroot/mnt
 TFTP_MY_PATH=/home/book/nfswork/mnt
