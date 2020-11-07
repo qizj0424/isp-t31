@@ -1,5 +1,4 @@
-C:q
-	=gcc
+C=gcc
 CCFLAGS += -pthread -Wall -g -static
 target = convert_parameters
 #sources = $(wildcard *.c)
